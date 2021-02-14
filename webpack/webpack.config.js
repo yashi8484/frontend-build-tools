@@ -30,7 +30,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "public/index.html")
+      template: path.resolve(__dirname, "public/index_template.html")
     })
   ],
   devServer: {
