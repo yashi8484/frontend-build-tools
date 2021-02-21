@@ -16,7 +16,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "echo start",
+    "start": "rollup -c -w",
     "build": "rollup -c",
     "test": "echo test"
   },
@@ -42,9 +42,13 @@
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-image": "^2.0.6",
     "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-replace": "^2.3.4",
     "@rollup/plugin-typescript": "^8.2.0",
     "rollup": "^2.39.0",
     "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-html2": "^2.0.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-serve": "^1.1.0",
     "tslib": "^2.1.0"
   }
 }
