@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "echo start",
-    "build": "esbuild src/index.tsx --bundle --loader:.ts=ts --loader:.svg=dataurl --outfile=public/bundle.js --define:process.env.NODE_ENV=\\\"production\\\" --minify --sourcemap=external",
+    "build": "node build.mjs",
     "test": "echo test"
   },
   "eslintConfig": {
