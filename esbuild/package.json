@@ -16,7 +16,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "echo start",
+    "start": "NODE_ENV=development node build.mjs",
     "build": "NODE_ENV=production node build.mjs",
     "test": "echo test"
   },

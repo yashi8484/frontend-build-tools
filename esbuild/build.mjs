@@ -18,3 +18,10 @@ const buildOption = {
 if (process.env.NODE_ENV === 'production') {
   esbuild.build(buildOption).catch(() => process.exit(1));
 }
+else if (process.env.NODE_ENV === 'development') {
+  esbuild.serve({
+    servedir: 'public'
+  }, buildOption).then(serveResult => {
+    console.log(`http://${serveResult.host}/${serveResult.port}`)
+  }).catch(() => process.exit(1));
+}
