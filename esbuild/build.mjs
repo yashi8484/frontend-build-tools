@@ -1,6 +1,6 @@
 import esbuild from "esbuild";
 
-esbuild.build({
+const buildOption = {
   entryPoints: ["src/index.tsx"],
   bundle: true,
   loader: {
@@ -13,4 +13,8 @@ esbuild.build({
   },
   minify: true,
   sourcemap: "external",
-}).catch(() => process.exit(1));
+}
+
+if (process.env.NODE_ENV === 'production') {
+  esbuild.build(buildOption).catch(() => process.exit(1));
+}
