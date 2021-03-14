@@ -16,7 +16,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "echo start",
+    "start": "vite",
     "build": "vite build",
     "test": "echo test"
   },

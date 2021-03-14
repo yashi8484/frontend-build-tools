@@ -1,8 +1,9 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  resolve: {
-    extensions: [".ts", ".tsx"],
+  server: {
+    port: 2424,
+    open: true,
   },
   build: {
     sourcemap: true,
