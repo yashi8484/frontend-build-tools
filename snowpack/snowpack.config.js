@@ -17,6 +17,6 @@ module.exports = {
     port: 2424
   },
   buildOptions: {
-    // sourcemap: true  // experimental option
+    sourcemap: true  // experimental option
   },
 };
